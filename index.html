@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./progress.png" type="image/x-icon">
+    <title>Multi Step Progress Bar</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="steps">
+            <span class="circle">1</span>
+            <span class="circle">2</span>
+            <span class="circle">3</span>
+            <span class="circle">4</span>
+            <div class="progressBar">
+                <span class="indicator"></span>
+            </div>
+        </div>
+        <div class="contentSteps">
+            <div class="content active">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="content">
+                <label for="username">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="content">
+                <label for="phoneno">Phone no.</label>
+                <input type="tel" name="phoneno" id="phoneno">
+            </div>
+            <div class="content">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address">
+            </div>
+        </div>
+        <div style="display: flex; gap: 0.5rem;">
+            <div class="buttonWrapper">
+                <button type="button" id="prev" disabled>Prev</button>
+                <button type="button" id="next">Next</button>
+            </div>
+            <button type="button" class="submit" id="submit">Submit</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
